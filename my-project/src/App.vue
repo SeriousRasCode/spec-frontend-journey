@@ -8,7 +8,7 @@ const name = ref('')
   <p>Hello {{ name }}</p>
 
   <ul>
-  <li v-for="lang in ['JS','Python','Go']" :key="lang">
+  <li v-for="lang in ['JS','Python','Go','Dart','PHP']" :key="lang">
     {{ lang }}
   </li>
 </ul>
