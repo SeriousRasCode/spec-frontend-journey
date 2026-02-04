@@ -24,5 +24,5 @@ const name = ref('')
   h1 v-else="hint">
     አትፈር
   </h1>
-  --><
+  -->
 </template>
