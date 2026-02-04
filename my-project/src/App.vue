@@ -17,6 +17,6 @@ const name = ref('')
 <!--todays challenge -->
 <input v-model="name" placeholder="Enter name">
 <h1 v-if="name">
-    Hello {{ name }}!
+    Greetings {{ name }}!
   </h1>
 </template>
