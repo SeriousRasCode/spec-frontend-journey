@@ -4,6 +4,7 @@ const name = ref('')
 </script>
 
 <template>
+  <!--
   <input v-model="name" placeholder="Type your name">
   <p>Hello {{ name }}</p>
 
@@ -11,5 +12,11 @@ const name = ref('')
   <li v-for="lang in ['JS','Python','Go','Dart','PHP']" :key="lang">
     {{ lang }}
   </li>
-</ul>
+</ul>-->
+
+<!--todays challenge -->
+<input v-model="name" placeholder="Enter name">
+<h1 v-if="name">
+    Hello {{ name }}!
+  </h1>
 </template>
