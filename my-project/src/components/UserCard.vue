@@ -14,10 +14,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: ['name', 'role','status']
-}
+<script setup>
+defineProps(['name', 'role', 'status'])
+defineEmits(['view-profile'])
 </script>
 
 <style lang="css">

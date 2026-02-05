@@ -1,7 +1,17 @@
 <script setup>
+
+
+
 import { ref } from 'vue'
 import UserCard from './components/UserCard.vue'
+
+
+
 const name = ref('')
+
+const showAlert = (userName) => {
+  alert("Profile of " + userName);
+}
 
 
 
@@ -39,18 +49,17 @@ const name = ref('')
 </template>
 
 <script>
-export default {
-  methods: {
-    showAlert(userName) {
-      alert("Opening profile for: " + userName);
-    }
-  }
-}
+
 </script>
 
 <style lang="css">
 .card-cont {
   display: flex;
+  justify-content: center; 
+  align-items: center;     
   gap: 20px;
+  min-height: 100vh;       
+  width: 100%;
+  
 }
 </style>
