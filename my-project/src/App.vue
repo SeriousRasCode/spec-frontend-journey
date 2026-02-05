@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import UserCard from './components/UserCard.vue'
 const name = ref('')
 </script>
 
@@ -14,15 +15,18 @@ const name = ref('')
   </li>
 </ul>-->
 
-<!--todays challenge -->
-<input v-model="name" placeholder="Enter your name">
+<!--day 2 challenge -->
 <h1 v-if="name">
     Greetings {{ name }}!
-  </h1>
+  </h1><br><br>
+<input v-model="name" placeholder="Enter your name">
+<br><br>
 
   <!--
   h1 v-else="hint">
     አትፈር
   </h1>
   -->
+<!--day 3 challenge -->
+  <UserCard name="Tedros" role="Admin" />
 </template>
