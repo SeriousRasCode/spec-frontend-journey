@@ -41,4 +41,14 @@ p {
   color: rgb(245, 168, 25);
   margin: 5px 0 0 0;
 }
+
+button{
+  margin-top: 10px;
+  color: white;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: sans-serif;
+}
 </style>
