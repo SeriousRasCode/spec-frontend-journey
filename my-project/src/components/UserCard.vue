@@ -1,4 +1,5 @@
 <template>
+  <!--div with conditional coloring using ternary operator-->
   <div class="card" :style="{ borderColor: status === 'online' ? 'green' : 'red' }">
     <h1>{{ name }}</h1>
     <p>{{ role }}</p>
