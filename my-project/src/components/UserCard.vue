@@ -1,8 +1,16 @@
 <template>
   <!--div with conditional coloring using ternary operator-->
   <div class="card" :style="{ borderColor: status === 'online' ? 'green' : 'red' }">
+
+    <p v-if="status === 'online'">🟢 Online</p>
+    <p v-else>🔴 Offline</p>
+
     <h1>{{ name }}</h1>
     <p>{{ role }}</p>
+
+    <button @click="$emit('view-profile', name)">
+      View Profile
+    </button>
   </div>
 </template>
 
