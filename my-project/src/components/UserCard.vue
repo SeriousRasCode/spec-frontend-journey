@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" :style="{ borderColor: status === 'online' ? 'green' : 'red' }">
     <h1>{{ name }}</h1>
     <p>{{ role }}</p>
   </div>
