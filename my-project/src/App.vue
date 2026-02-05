@@ -16,11 +16,11 @@ const name = ref('')
 </ul>-->
 
 <!--day 2 challenge -->
-<h1 v-if="name">
+<!--<h1 v-if="name">
     Greetings {{ name }}!
   </h1><br><br>
 <input v-model="name" placeholder="Enter your name">
-<br><br>
+<br><br>-->
 
   <!--
   h1 v-else="hint">
@@ -28,5 +28,16 @@ const name = ref('')
   </h1>
   -->
 <!--day 3 challenge -->
+<div class="card-cont">
   <UserCard name="Tedros" role="Admin" />
+  <UserCard name="Moa" role="Manager" />
+  <UserCard name="Ezana" role="Employee" />
+  </div>
 </template>
+
+<style lang="css">
+.card-cont {
+  display: flex;
+  gap: 20px;
+}
+</style>
