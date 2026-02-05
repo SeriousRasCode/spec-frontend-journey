@@ -1,11 +1,6 @@
 <script setup>
-
-
-
 import { ref } from 'vue'
 import UserCard from './components/UserCard.vue'
-
-
 
 const name = ref('')
 
@@ -47,10 +42,6 @@ const showAlert = (userName) => {
     <UserCard name="Ezana" role="Employee" status="online" @view-profile="showAlert" />
   </div>
 </template>
-
-<script>
-
-</script>
 
 <style lang="css">
 .card-cont {
