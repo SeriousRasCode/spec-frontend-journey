@@ -36,21 +36,25 @@ const showAlert = (userName) => {
   </h1>
   -->
   <!--day 3 challenge -->
-  <div class="card-cont">
-    <UserCard name="Tedros" role="Admin" status="online" @view-profile="showAlert" />
-    <UserCard name="Moa" role="Manager" status="offline" @view-profile="showAlert" />
-    <UserCard name="Ezana" role="Employee" status="online" @view-profile="showAlert" />
+  <div class="main-cont">
+    <div class="card-cont">
+      <UserCard name="Tedros" role="Admin" status="online" @view-profile="showAlert" />
+      <UserCard name="Moa" role="Manager" status="offline" @view-profile="showAlert" />
+      <UserCard name="Ezana" role="Employee" status="online" @view-profile="showAlert" />
+    </div>
   </div>
 </template>
 
 <style lang="css">
+.main-cont {
+  display:flex;
+  width:100vw;
+  align-self: center;;
+  margin:0;
+  justify-content: center;
+}
 .card-cont {
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
+  display: flex;    
   gap: 20px;
-  min-height: 100vh;       
-  width: 100%;
-  
 }
 </style>
