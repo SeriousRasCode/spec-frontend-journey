@@ -29,9 +29,12 @@ const name = ref('')
   -->
 <!--day 3 challenge -->
 <div class="card-cont">
-  <UserCard name="Tedros" role="Admin" />
-  <UserCard name="Moa" role="Manager" />
-  <UserCard name="Ezana" role="Employee" />
+  <UserCard name="Tedros" role="Admin" status="online" 
+      @view-profile="showAlert"/>
+  <UserCard name="Moa" role="Manager" status="offline" 
+      @view-profile="showAlert"/>
+  <UserCard name="Ezana" role="Employee" status="online" 
+      @view-profile="showAlert"/>
   </div>
 </template>
 
