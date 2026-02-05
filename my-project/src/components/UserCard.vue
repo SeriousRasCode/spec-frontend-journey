@@ -2,8 +2,8 @@
   <!--div with conditional coloring using ternary operator-->
   <div class="card" :style="{ borderColor: status === 'online' ? 'green' : 'red' }">
 
-    <p v-if="status === 'online'">🟢 Online</p>
-    <p v-else>🔴 Offline</p>
+    <p v-if="status === 'online'">🟢</p>
+    <p v-else>🔴</p>
 
     <h1>{{ name }}</h1>
     <p>{{ role }}</p>
