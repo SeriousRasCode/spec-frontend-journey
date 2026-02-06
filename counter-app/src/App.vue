@@ -1,47 +1,56 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { ref } from 'vue';
+const count = ref(0);
+
+const increment = () => {
+  count.value++;
+};
+
+const decrement = () => {
+    count.value--;
+  
+};
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="c-cont">
+    <h2>My Counter</h2>
+    
+    <h1>{{ count }}</h1>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <div>
+      <button @click="decrement" :disabled="count === 0">—</button>
+      <button @click="increment">+</button>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+.c-cont {
+  border: 1px solid #ffdeb2;
+  border-radius:12px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+h1 {
+  font-size: 48px;
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+button {
+  color:#ccc;
+  border-radius: 20%;
+  border-color: #ffdeb2;
+  border-width: 1px;
+  width:60px;
+  height:60px;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+button:disabled {
+  cursor:not-allowed;
+  opacity: 0.2;
 }
 </style>
