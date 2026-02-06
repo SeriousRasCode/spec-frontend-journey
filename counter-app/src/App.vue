@@ -2,11 +2,11 @@
 import { ref } from 'vue';
 const count = ref(0);
 
-const increment = () => {
+const increase = () => {
   count.value++;
 };
 
-const decrement = () => {
+const decrease = () => {
     count.value--;
   
 };
@@ -19,8 +19,8 @@ const decrement = () => {
     <h1>{{ count }}</h1>
 
     <div>
-      <button @click="decrement" :disabled="count === 0">—</button>
-      <button @click="increment">+</button>
+      <button @click="decrease" :disabled="count === 0">—</button>
+      <button @click="increase">+</button>
     </div>
   </div>
 </template>
