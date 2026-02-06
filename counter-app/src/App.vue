@@ -27,8 +27,7 @@ const decrease = () => {
 
 <style scoped>
 .c-cont {
-  border: 1px solid #ffdeb2;
-  border-radius:12px;
+  
   padding: 20px;
   text-align: center;
   margin-top: 50px;
@@ -37,20 +36,24 @@ h1 {
   font-size: 48px;
 }
 button {
-  color:#ccc;
-  border-radius: 20%;
-  border-color: #ffdeb2;
-  border-width: 1px;
-  width:60px;
-  height:60px;
-  background-color: transparent;
-  padding: 10px 20px;
-  font-size: 18px;
+  width: 60px;
+  height: 40px;
   margin: 0 10px;
   cursor: pointer;
+  background: none;
+  color: #ffdeb2;
+  border: 1px solid #ffdeb2;
+  border-radius: 12px;
+  transition: 0.2s;
 }
+
+button:hover:not(:disabled) {
+  background: #ffdeb2;
+  color: #222;
+}
+
 button:disabled {
-  cursor:not-allowed;
-  opacity: 0.2;
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 </style>
